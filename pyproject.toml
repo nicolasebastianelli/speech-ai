@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "speech-ai"
+version = "0.0.1"
+description = ""
+authors = ["nicolasebastianelli <https://github.com/nicolasebastianelli>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "speechai"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
