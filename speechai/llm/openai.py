@@ -8,7 +8,6 @@ class OpenAI(AbstractLLM):
         openai.api_key = api_key
 
     def generate_text(self, prompt):
-        print("Generating text")
         response = openai.Completion.create(
             engine="text-davinci-003", prompt=prompt, max_tokens=100  # Adjust as per your API version
         )

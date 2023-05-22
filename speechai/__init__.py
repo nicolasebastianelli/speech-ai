@@ -1,1 +1,1 @@
-from speechai.core.generator import Generator
+from speechai.core.speechai import SpeechAI

@@ -4,11 +4,15 @@ from speechai.tts.abstract_tts import AbstractTTS
 
 
 class GTTS(AbstractTTS):
-    def __init__(self):
-        print("Initialized GTTS")
-        self.engine = ""
+    __language: str
 
-    def text_to_speech(self, text):
-        tts = gTTS(text)
-        tts.save("output.mp3")
-        print("done")
+    def __init__(self, language_code="en"):
+        self.set_language(language_code)
+
+    def text_to_speech(self, text: str, save_to: str):
+        tts = gTTS(text, lang=self.__language)
+        tts.save(save_to)
+        return save_to
+
+    def set_language(self, language_code: str):
+        self.__language = language_code
