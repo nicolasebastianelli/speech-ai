@@ -11,7 +11,7 @@ class SpeechAI:
         self.set_llm(llm)
         self.set_tts(tts)
 
-    def generate_speech(self, prompt: str, save_to: str):
+    def synthesize_dialog(self, prompt: str, save_to: str):
         create_directory_from_path(save_to)
         text = self.__llm.generate_text(prompt)
         audio = self.__tts.text_to_speech(text, save_to)
