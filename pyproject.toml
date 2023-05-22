@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "speech-ai"
+name = "speechai"
 version = "0.0.1"
 description = "A Python package that generates conversational speech from text using a combination of Generative AI models and various text-to-speech engines, enabling applications to produce dynamic and contextually aware spoken responses."
 authors = ['Nicola Sebastianelli']
