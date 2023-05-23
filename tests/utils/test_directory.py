@@ -1,4 +1,5 @@
 import pytest
+
 from speechai.utils import create_directory_from_path
 
 
