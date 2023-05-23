@@ -19,7 +19,7 @@ jobs:
         python-version: 3.9
 
     - name: 💼 Install Poetry
-      run: pip install poetry=1.4.2
+      run: pip install poetry==1.4.2
 
     - name: 🗄️ Cache Poetry Dependencies
       uses: actions/cache@v2
