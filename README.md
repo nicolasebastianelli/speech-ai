@@ -12,7 +12,7 @@
   <a href="https://github.com/nicolasebastianelli/speech-ai/issues/new?assignees=&labels=bug&template=01_BUG_REPORT.md&title=bug%3A+">Report a Bug</a>
   ·
   <a href="https://github.com/nicolasebastianelli/speech-ai/issues/new?assignees=&labels=enhancement&template=02_FEATURE_REQUEST.md&title=feat%3A+">Request a Feature</a>
-  .
+  ·
   <a href="https://github.com/nicolasebastianelli/speech-ai/discussions">Ask a Question</a>
 </div>
 
@@ -32,11 +32,26 @@
 [![Imports: isort](https://img.shields.io/badge/test-pytest-f2c3c9.svg)](https://docs.pytest.org/en/7.3.x/)
 </div>
 
-## Getting Started
+## Where to get it
+The source code is currently hosted on GitHub at:
+https://github.com/nicolasebastianelli/speech-ai
+
+Binary installers for the latest released version are available at the [Python
+Package Index (PyPI)](https://pypi.org/project/speechai) and on [Conda](https://docs.conda.io/en/latest/).
 
 ```sh
+# conda
+conda install -c conda-forge speechai
+```
+
+```sh
+# or PyPI
 pip install speechai
 ```
+
+The list of changes to speechai between each release can be found
+[here](https://github.com/nicolasebastianelli/speech-ai/releases). For full
+details, see the commit logs at https://github.com/nicolasebastianelli/speech-ai/commits/main.
 
 ## Contributing
 

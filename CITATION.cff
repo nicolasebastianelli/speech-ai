@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+title: 'nicolasebastianelli/speech-ai: SpeechAI'
+message: 'If you use this software, please cite it as below.'
+authors:
+  - name: "Nicola Sebastianelli"
+license: MIT
+license-url: "https://github.com/nicolasebastianelli/speech-ai/blob/main/LICENSE"
+repository-code: "https://github.com/pandas-dev/pandas"
+type: software
+url: "https://github.com/nicolasebastianelli/speech-ai"
