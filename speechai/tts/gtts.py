@@ -1,4 +1,5 @@
 from gtts import gTTS
+from gtts.tokenizer.pre_processors import abbreviations, end_of_line
 
 from speechai.tts.abstract_tts import AbstractTTS
 
@@ -10,7 +11,7 @@ class GTTS(AbstractTTS):
         self.set_language(language_code)
 
     def text_to_speech(self, text: str, save_to: str):
-        tts = gTTS(text, lang=self.__language)
+        tts = gTTS(text, lang=self.__language, pre_processor_funcs=[abbreviations, end_of_line])
         tts.save(save_to)
         return save_to
 

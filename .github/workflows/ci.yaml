@@ -1,0 +1,83 @@
+name: Python CI 🛠️
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - name: 🚀 Checkout Code
+      uses: actions/checkout@v2
+
+    - name: 🐍 Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.9
+
+    - name: 💼 Install Poetry
+      run: pip install poetry=1.4.2
+
+    - name: 🗄️ Cache Poetry Dependencies
+      uses: actions/cache@v2
+      with:
+        path: ~/.cache/pypoetry
+        key: ${{ runner.os }}-poetry-${{ hashFiles('**/poetry.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-poetry-
+
+    - name: 🔧 Install Dependencies
+      run: poetry install
+
+    - name: 🧹 Run isort
+      run: poetry run isort --check-only --diff .
+
+    - name: 🎨 Run Black Code Formatter
+      run: poetry run black --check .
+
+    - name: 📖 Run Flake8 Linter
+      run: poetry run flake8 speechai tests examples
+
+    - name: 🔍 Run Pylint Code Analyzer
+      run: poetry run pylint speechai tests examples
+
+    - name: 🧪 Run Pytest
+      run: poetry run pytest
+
+  build:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🚀 Checkout Code
+        uses: actions/checkout@v2
+
+      - name: 🐍 Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.9
+
+      - name: 💼 Install Poetry
+        run: pip install poetry
+
+      - name: 🗄️ Cache Poetry Dependencies
+        uses: actions/cache@v2
+        with:
+          path: ~/.cache/pypoetry
+          key: ${{ runner.os }}-poetry-${{ hashFiles('**/poetry.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-poetry-
+
+      - name: 🔧 Install Dependencies
+        run: poetry install
+
+      - name: 🏗️ Build
+        run: poetry build
+
+      - name: 📦 Store build artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: distribution-files
+          path: dist/*

@@ -1,0 +1,36 @@
+# .github/workflows/cd.yml
+
+name: Python CD 🚀
+
+on:
+  push:
+    branches: [ master ]
+    tags:
+      - v*
+
+jobs:
+  publish:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+    - name: 🚀 Checkout Code
+      uses: actions/checkout@v2
+
+    - name: 🐍 Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.9
+
+    - name: 💼 Install Poetry
+      run: pip install poetry
+
+    - name: 📥 Download build artifacts
+      uses: actions/download-artifact@v2
+      with:
+        name: distribution-files
+        path: dist/
+
+    - name: 🚚 Publish to PyPI
+      env:
+        POETRY_PYPI_TOKEN_PYPI: ${{ secrets.PYPI_TOKEN }}
+      run: poetry publish
