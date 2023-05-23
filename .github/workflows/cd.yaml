@@ -10,7 +10,6 @@ on:
 
 jobs:
   build:
-    needs: test
     runs-on: ubuntu-latest
     steps:
       - name: 🚀 Checkout Code
