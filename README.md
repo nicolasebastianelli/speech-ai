@@ -1,9 +1,6 @@
-# SpeechAi 🔊
-
-<p align="center" width="100%">
-    <img width="33%" src="https://github.com/nicolasebastianelli/speech-ai/blob/main/images/logo-icon.png">
-    <br/>
-    <img width="40%" src="https://github.com/nicolasebastianelli/speech-ai/blob/main/images/logo-text.png">
+<p align="center" style="display:flex; flex-direction:column; align-items:center; justify-content:center width:100% gap:0px">
+    <img width="25%" src="https://github.com/nicolasebastianelli/speech-ai/blob/main/images/logo-icon.png">
+    <img width="45%" src="https://github.com/nicolasebastianelli/speech-ai/blob/main/images/logo-text.png">
 </p>
 
 [![Release](https://img.shields.io/pypi/v/speechai?label=release)](https://pypi.org/project/speechai/)
