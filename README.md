@@ -1,5 +1,11 @@
 # SpeechAi 🔊
 
+<p align="center" width="100%">
+    <img width="33%" src="https://github.com/nicolasebastianelli/speech-ai/blob/main/images/logo-icon.png">
+    <br/>
+    <img width="40%" src="https://github.com/nicolasebastianelli/speech-ai/blob/main/images/logo-text.png">
+</p>
+
 [![Release](https://img.shields.io/pypi/v/speechai?label=release)](https://pypi.org/project/speechai/)
 [![Downloads](https://static.pepy.tech/badge/speechai/month)](https://pepy.tech/project/speechai)
 [![CI](https://github.com/nicolasebastianelli/speech-ai/actions/workflows/ci.yaml/badge.svg)](https://github.com/nicolasebastianelli/speech-ai/actions/workflows/ci.yaml)
