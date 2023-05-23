@@ -75,9 +75,3 @@ jobs:
 
       - name: 🏗️ Build
         run: poetry build
-
-      - name: 📦 Store build artifacts
-        uses: actions/upload-artifact@v2
-        with:
-          name: distribution-files
-          path: dist/*
