@@ -15,5 +15,4 @@ speech_ai = SpeechAI(openai, tts)
 
 speech_ai.synthesize_dialog("What is the average height of giraffe?", "output/giraffe.mp3")
 [text, audio] = speech_ai.synthesize_dialog("How fast can a tuna swim?", "output/tuna.mp3")
-print(text)
-print(audio)
+print(text, audio)

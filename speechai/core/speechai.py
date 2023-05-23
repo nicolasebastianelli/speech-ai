@@ -23,5 +23,11 @@ class SpeechAI:
     def set_tts(self, tts: AbstractTTS):
         self.__tts = tts
 
+    def get_llm(self):
+        return self.__llm
+
+    def get_tts(self):
+        return self.__tts
+
     def set_language(self, language_code: str):
         self.__tts.set_language(language_code)
