@@ -3,7 +3,7 @@ name = "speechai"
 version = "0.0.2"
 description = "A Python package that generates conversational speech from text using a combination of Generative AI models and various text-to-speech engines, enabling applications to produce dynamic and contextually aware spoken responses."
 authors = ['Nicola Sebastianelli']
-license = "MIT"
+license = "Apache-2.0"
 readme = "README.md"
 packages = [{include = "speechai"}]
 
