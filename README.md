@@ -37,16 +37,11 @@ The source code is currently hosted on GitHub at:
 https://github.com/nicolasebastianelli/speech-ai
 
 Binary installers for the latest released version are available at the [Python
-Package Index (PyPI)](https://pypi.org/project/speechai) and on [Conda](https://docs.conda.io/en/latest/).
+Package Index (PyPI)](https://pypi.org/project/speechai).
 
 ```sh
 # PyPI
 pip install speechai
-```
-
-```sh
-# or conda
-conda install -c conda-forge speechai
 ```
 
 The list of changes to speechai between each release can be found

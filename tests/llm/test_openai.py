@@ -2,7 +2,7 @@ from unittest.mock import Mock, PropertyMock
 
 import pytest
 
-from speechai.llm.openai import OpenAI
+from speechai.llm import OpenAI
 
 
 @pytest.fixture(name="openai_api_key")
@@ -33,6 +33,4 @@ def test_openai_llm_generate_text(openai_api_key, mock_openai):
     mock_openai.Completion.create.return_value = mock_response
 
     assert openai_llm.generate_text(prompt) == "Hello, World!"
-    mock_openai.Completion.create.assert_called_once_with(
-        engine="text-davinci-003", prompt=prompt, max_tokens=100  # Adjust as per your API version
-    )
+    mock_openai.Completion.create.assert_called_once_with(engine="text-davinci-003", prompt=prompt, max_tokens=100)

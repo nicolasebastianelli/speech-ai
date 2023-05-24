@@ -12,6 +12,7 @@ python = "^3.8.1"
 openai = "^0.27.7"
 python-dotenv = "^1.0.0"
 gtts = "^2.3.2"
+cohere = "^4.5.1"
 
 
 [tool.poetry.group.dev.dependencies]
