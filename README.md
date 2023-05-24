@@ -40,13 +40,13 @@ Binary installers for the latest released version are available at the [Python
 Package Index (PyPI)](https://pypi.org/project/speechai) and on [Conda](https://docs.conda.io/en/latest/).
 
 ```sh
-# conda
-conda install -c conda-forge speechai
+# PyPI
+pip install speechai
 ```
 
 ```sh
-# or PyPI
-pip install speechai
+# or conda
+conda install -c conda-forge speechai
 ```
 
 The list of changes to speechai between each release can be found
