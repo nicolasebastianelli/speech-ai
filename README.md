@@ -1,6 +1,6 @@
 <h1 align="center" width="100%">
     <a href="https://github.com/nicolasebastianelli/speech-ai">
-        <img width="50%" src="https://github.com/nicolasebastianelli/speech-ai/assets/100476561/4c241dce-a704-49d9-a11a-4bcc11a286b3">
+        <img width="50%" src="https://github.com/nicolasebastianelli/speech-ai/blob/main/images/logo.png">
     </a>
 </h1>
 
@@ -20,9 +20,13 @@
 
 [![Release](https://img.shields.io/pypi/v/speechai?label=release)](https://pypi.org/project/speechai/)
 [![Downloads](https://static.pepy.tech/badge/speechai/month)](https://pepy.tech/project/speechai)
+[![License](https://img.shields.io/pypi/l/speechai.svg)](https://github.com/nicolasebastianelli/speech-ai/blob/main/LICENSE)
+[![codecov](https://codecov.io/gh/nicolasebastianelli/speech-ai/branch/main/graph/badge.svg?token=CvXgrbE8Mh)](https://codecov.io/gh/nicolasebastianelli/speech-ai)
+[![Open Source Helpers](https://www.codetriage.com/nicolasebastianelli/speech-ai/badges/users.svg)](https://www.codetriage.com/nicolasebastianelli/speech-ai)
+
 [![CI](https://github.com/nicolasebastianelli/speech-ai/actions/workflows/ci.yaml/badge.svg)](https://github.com/nicolasebastianelli/speech-ai/actions/workflows/ci.yaml)
 [![CD](https://github.com/nicolasebastianelli/speech-ai/actions/workflows/cd.yaml/badge.svg)](https://github.com/nicolasebastianelli/speech-ai/workflows/cd.yaml)
-[![License](https://img.shields.io/pypi/l/speechai.svg)](https://github.com/nicolasebastianelli/speech-ai/blob/main/LICENSE)
+[![CodeQL](https://github.com/nicolasebastianelli/speech-ai/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/nicolasebastianelli/speech-ai/actions/workflows/github-code-scanning/codeql)
 
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![Imports: isort](https://img.shields.io/badge/imports-isort-edfaca.svg)](https://pycqa.github.io/isort/)
