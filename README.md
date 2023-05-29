@@ -1,7 +1,6 @@
 <h1 align="center" width="100%">
     <a href="https://github.com/nicolasebastianelli/speech-ai">
-        <img width="25%" src="https://github.com/nicolasebastianelli/speech-ai/blob/main/images/logo-icon.png">
-        <img width="45%" src="https://github.com/nicolasebastianelli/speech-ai/blob/main/images/logo-text.png">
+        <img width="50%" src="https://github.com/nicolasebastianelli/speech-ai/assets/100476561/4c241dce-a704-49d9-a11a-4bcc11a286b3">
     </a>
 </h1>
 
@@ -32,6 +31,21 @@
 [![Imports: isort](https://img.shields.io/badge/test-pytest-f2c3c9.svg)](https://docs.pytest.org/en/7.3.x/)
 </div>
 
+## Usage
+
+Speech AI 🔈 empowers you to receive vocal responses directly from NLP models with few lines of code.
+Its flexibility plays nice with any big language model and voice tools out there, so it's super easy to integrate into your own projects.
+
+Just install it, import the nlp model you want to use and connect the Google text to speach. 
+Then, ask the model your question and download the audio answer, as easy as that! 
+
+Here you can find a couple of examples
+
+SpeechAI with Cohere [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/<username>/<repository>/blob/main/<notebook>.ipynb)
+
+SpeechAI with OpenAI [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/<username>/<repository>/blob/main/<notebook>.ipynb)
+
+
 ## Where to get it
 The source code is currently hosted on GitHub at:
 https://github.com/nicolasebastianelli/speech-ai
@@ -47,6 +61,7 @@ pip install speechai
 The list of changes to speechai between each release can be found
 [here](https://github.com/nicolasebastianelli/speech-ai/releases). For full
 details, see the commit logs at https://github.com/nicolasebastianelli/speech-ai/commits/main.
+
 
 ## Contributing
 
