@@ -1,7 +1,6 @@
 <h1 align="center" width="100%">
     <a href="https://github.com/nicolasebastianelli/speech-ai">
-        <img width="25%" src="https://github.com/nicolasebastianelli/speech-ai/blob/main/images/logo-icon.png">
-        <img width="45%" src="https://github.com/nicolasebastianelli/speech-ai/blob/main/images/logo-text.png">
+        <img width="50%" src="https://github.com/nicolasebastianelli/speech-ai/assets/100476561/4c241dce-a704-49d9-a11a-4bcc11a286b3">
     </a>
 </h1>
 
@@ -32,7 +31,23 @@
 [![Imports: isort](https://img.shields.io/badge/test-pytest-f2c3c9.svg)](https://docs.pytest.org/en/7.3.x/)
 </div>
 
-## Where to get it
+## What is it?
+
+SpeechAI 🔈 is a Python package which empowers you to receive vocal responses directly from LLM with few lines of code.
+Its flexibility plays nice with any LLM and voice tools out there (online and offline), making it easy integrate it into your own projects.
+
+
+Just install it, import the desired LLM and TTS from SpeechAI.
+Once done, you can query the model with your question and promptly receive an audio response, ready for download.
+As easy as that!
+
+Here you can find a couple of examples:
+
+* SpeechAI with **OpenAI**: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/17Badf1f2H6YU8Go-a9IfrZ3r2xmG0h6A)
+* SpeechAI with **Cohere**: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1DRylc8BvvH8RNIPGteLIE-AAYQDUgWPm)
+
+
+## Install
 The source code is currently hosted on GitHub at:
 https://github.com/nicolasebastianelli/speech-ai
 
@@ -47,6 +62,7 @@ pip install speechai
 The list of changes to speechai between each release can be found
 [here](https://github.com/nicolasebastianelli/speech-ai/releases). For full
 details, see the commit logs at https://github.com/nicolasebastianelli/speech-ai/commits/main.
+
 
 ## Contributing
 
