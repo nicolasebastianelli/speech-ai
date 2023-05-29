@@ -31,22 +31,23 @@
 [![Imports: isort](https://img.shields.io/badge/test-pytest-f2c3c9.svg)](https://docs.pytest.org/en/7.3.x/)
 </div>
 
-## Usage
+## What is it?
 
-Speech AI 🔈 empowers you to receive vocal responses directly from NLP models with few lines of code.
-Its flexibility plays nice with any big language model and voice tools out there, so it's super easy to integrate into your own projects.
-
-Just install it, import the nlp model you want to use and connect the Google text to speach. 
-Then, ask the model your question and download the audio answer, as easy as that! 
-
-Here you can find a couple of examples
-
-SpeechAI with Cohere [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/<username>/<repository>/blob/main/<notebook>.ipynb)
-
-SpeechAI with OpenAI [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/<username>/<repository>/blob/main/<notebook>.ipynb)
+SpeechAI 🔈 is a Python package which empowers you to receive vocal responses directly from LLM with few lines of code.
+Its flexibility plays nice with any LLM and voice tools out there (online and offline), making it easy integrate it into your own projects.
 
 
-## Where to get it
+Just install it, import the desired LLM and TTS from SpeechAI.
+Once done, you can query the model with your question and promptly receive an audio response, ready for download.
+As easy as that!
+
+Here you can find a couple of examples:
+
+* SpeechAI with **OpenAI**: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/17Badf1f2H6YU8Go-a9IfrZ3r2xmG0h6A)
+* SpeechAI with **Cohere**: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1DRylc8BvvH8RNIPGteLIE-AAYQDUgWPm)
+
+
+## Install
 The source code is currently hosted on GitHub at:
 https://github.com/nicolasebastianelli/speech-ai
 
