@@ -50,12 +50,12 @@ jobs:
     - name: 📊 Generate Coverage Report
       run: poetry run coverage xml --fail-under=92
 
-#    - name: 🎯 Upload coverage to Codecov
-#        uses: codecov/codecov-action@v2
-#        with:
-#          token: ${{ secrets.CODECOV_TOKEN }}
-#          files: ./coverage.xml
-#          fail_ci_if_error: true
+    - name: 🎯 Upload coverage to Codecov
+      uses: codecov/codecov-action@v2
+      with:
+        token: ${{ secrets.CODECOV_TOKEN }}
+        files: ./coverage.xml
+        fail_ci_if_error: true
 
   build:
     needs: test
